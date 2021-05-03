@@ -1,0 +1,13 @@
+replicaCount: 1
+
+image:
+  repository: sciencemesh/gocdb
+  tag: latest
+  pullPolicy: Always
+
+service:
+  type: ClusterIP
+  port: 80
+
+mariadb:
+  initdbScriptsConfigMap: gocdb-initsql

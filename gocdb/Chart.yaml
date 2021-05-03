@@ -1,0 +1,28 @@
+apiVersion: v2
+name: gocdb
+description: Repository, Portal and REST API for managing Grid and Cloud topology objects
+type: application
+version: 0.1.0
+appVersion: 5.7.5
+home: https://wiki.egi.eu/wiki/GOCDB
+sources:
+  - https://github.com/GOCDB/gocdb
+dependencies:
+- name: mariadb
+  version: 9.3.9
+  repository: "https://charts.bitnami.com/bitnami"
+maintainers:
+  - name: Daniel-WWU-IT
+    email: daniel.mueller@uni-muenster.de
+  - name: SamuAlfageme
+    email: samuel.alfageme.sainz@cern.ch
+keywords:
+  - eosc-hub
+  - egi
+  - grid
+annotations:
+  artifacthub.io/changes: |
+    -
+  artifacthub.io/images: |
+    - name: gocdb
+      image: sciencemesh/gocdb:latest
